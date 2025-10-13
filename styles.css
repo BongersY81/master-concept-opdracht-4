@@ -1,0 +1,243 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Header
+        3.1 introduction
+        3.2 sections
+    4. articles
+        4.1
+        4.2
+        etc.
+    5. Media queries
+ /*!///////////////////////!*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Paars: #5722CD;
+    --Blauw: #4B49E8;
+    --Lichtpaars: #F2FOFF;
+    --French-rose: #ED4385;
+    --Zwart: #OCOCOC;
+    --Lichtgrijs: #F3F6F;
+    --Grijs: #7A7A7A;
+    --Wit: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1, h2 {
+    font-family: "Merriweather", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    /*position : relative;*/
+    /*top: 50px;*/
+    /*bottom: 60px;*/
+    /*left: 50px;*/
+    /*right:50px;*/
+    /*padding-right: 55px*/
+    color: var(--Wit);
+}
+
+h2 {
+
+    text-align: center;
+    color: var(--Zwart);
+}
+
+h3 {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    bottom: 10px;
+    color: var(--Wit);
+}
+
+
+
+
+p {
+    text-align: center;
+    color: var(--Zwart);
+
+}
+
+
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+.nav-item {
+    background-color: var(--Paars);
+}
+.navbar a {
+    text-decoration: none;
+}
+
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 5px;
+    color: var(--Wit);
+    border: 2px solid black;
+}
+
+
+footer {
+    background-color: var(--Zwart);
+    color: var(--Wit);
+}
+
+/* -------------------------------3 header-------------------------------------- */
+Header {
+    background-color: var(--Paars);
+    color: var(--Wit);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.outer-container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.inner-container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1000px;
+    margin: 0 20px;
+    height: 500px;
+    flex-grow: 0;
+    border: 2px solid black;
+}
+
+.header-button {
+    text-transform: uppercase;
+    position: relative;
+    top: 90px;
+    padding: 25px 50px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: var(--French-rose);
+    border: none;
+    color: var(--Wit);
+}
+
+
+
+/* ---------------3.1 introduction--------------------------- */
+.outer-container-introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.inner-container-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1000px;
+    height: 500px;
+    padding-top: 60px;
+    /*margin: 0 20px;*/
+    /*color: var(--Paars);*/
+    border: 2px solid black;
+}
+
+/* --------------- 3.2 section ------------------------- */
+
+.outer-container-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /*border: 2px solid var(--Zwart);*/
+}
+
+.inner-container-section {
+    display: flex;
+    /*flex-direction: reverse;*/
+    justify-content:center;
+    flex-basis: 1200px;
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*margin:50px;*/
+    /*border: 2px solid var(--Zwart);*/
+}
+
+img {
+
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    border: 2px solid var(--Zwart);
+}
+
+
+/* --------------- 4 article ------------------------- */
+.outer-container-article {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-container-article {
+    display: flex;
+
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1000px;
+}
+
+.service-article img {
+
+    width: 50px;
+    justify-items: center;
+
+    align-content: center;
+    text-align: center;
+}
+
+
+/* ---------------  ------------------- */
+
+
+/* ------------------------------- 5. Media queries ---------------------------------------- */
