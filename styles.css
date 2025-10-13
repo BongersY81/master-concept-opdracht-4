@@ -6,7 +6,7 @@
         3.1 introduction
         3.2 sections
     4. articles
-        4.1
+        4.1 formulier
         4.2
         etc.
     5. Media queries
@@ -41,12 +41,13 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "Merriweather", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+
 }
 
 h1 {
@@ -64,14 +65,14 @@ h1 {
 h2 {
 
     text-align: center;
-    color: var(--Zwart);
+    color: var(--Paars);
 }
 
 h3 {
     text-align: center;
     position: relative;
-    top: 100px;
-    bottom: 10px;
+    top: 10px;
+    bottom: 20px;
     color: var(--Wit);
 }
 
@@ -104,7 +105,7 @@ p {
     list-style: none;
     padding: 5px;
     color: var(--Wit);
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 
@@ -130,7 +131,7 @@ Header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 .inner-container-header {
@@ -141,7 +142,7 @@ Header {
     margin: 0 20px;
     height: 500px;
     flex-grow: 0;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 .header-button {
@@ -149,12 +150,18 @@ Header {
     position: relative;
     top: 90px;
     padding: 25px 50px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
     border-radius: 50px 50px 50px 50px;
     background-color: var(--French-rose);
     border: none;
     color: var(--Wit);
 }
 
+.header-img{
+    position: relative;
+    /*top: 100px;*/
+    bottom: 10px;
+}
 
 
 /* ---------------3.1 introduction--------------------------- */
@@ -162,7 +169,8 @@ Header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid black;
+    /*border: 2px solid var(--Zwart);*/
+
 }
 
 .inner-container-introduction {
@@ -172,9 +180,7 @@ Header {
     flex-basis: 1000px;
     height: 500px;
     padding-top: 60px;
-    /*margin: 0 20px;*/
-    /*color: var(--Paars);*/
-    border: 2px solid black;
+    /*border: 2px solid var(--Zwart);*/
 }
 
 /* --------------- 3.2 section ------------------------- */
@@ -207,9 +213,9 @@ img {
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
-
-    border: 2px solid var(--Zwart);
 }
+/*    border: 2px solid var(--Zwart);*/
+/*}*/
 
 
 /* --------------- 4 article ------------------------- */
@@ -220,7 +226,6 @@ img {
 
 .inner-container-article {
     display: flex;
-
     gap: 10px;
     flex-direction: column;
     align-items: center;
@@ -228,16 +233,30 @@ img {
 }
 
 .service-article img {
-
-    width: 50px;
+    width: 40px;
     justify-items: center;
-
     align-content: center;
     text-align: center;
 }
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.article-grid article {
+    padding: 20px;
+}
+/* --------------- 4.1 formulier ------------------- */
+.contact form {
 
 
-/* ---------------  ------------------- */
+}
+.contact-form label {
 
+}
+
+.contact-form input {
+    width: 100%;
+}
 
 /* ------------------------------- 5. Media queries ---------------------------------------- */
