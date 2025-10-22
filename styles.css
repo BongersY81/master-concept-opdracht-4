@@ -77,8 +77,6 @@ h3 {
 }
 
 
-
-
 p {
     text-align: center;
     color: var(--Zwart);
@@ -86,16 +84,15 @@ p {
 }
 
 
-
-
 /* ------------------------------- 2. Typography ----------------------------------- */
 .nav-item {
     background-color: var(--Paars);
 }
+
 .navbar a {
     text-decoration: none;
+    color: var(--Wit);
 }
-
 
 .navbar ul {
     display: flex;
@@ -108,10 +105,13 @@ p {
     /*border: 2px solid black;*/
 }
 
-
 footer {
     background-color: var(--Zwart);
     color: var(--Wit);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    padding: 15px;
 }
 
 /* -------------------------------3 header-------------------------------------- */
@@ -125,6 +125,7 @@ Header {
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
+    background: linear-gradient(180deg, #5722CD, #4B49E8);
 }
 
 .outer-container-header {
@@ -157,7 +158,7 @@ Header {
     color: var(--Wit);
 }
 
-.header-img{
+.header-img {
     position: relative;
     /*top: 100px;*/
     bottom: 10px;
@@ -196,7 +197,7 @@ Header {
 .inner-container-section {
     display: flex;
     /*flex-direction: reverse;*/
-    justify-content:center;
+    justify-content: center;
     flex-basis: 1200px;
     /*align-content: center;*/
     /*justify-content: center;*/
@@ -214,6 +215,7 @@ img {
     flex-grow: 0;
     flex-shrink: 1;
 }
+
 /*    border: 2px solid var(--Zwart);*/
 /*}*/
 
@@ -229,34 +231,69 @@ img {
     gap: 10px;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     flex-basis: 1000px;
 }
 
 .service-article img {
+    flex-direction: column;
     width: 40px;
     justify-items: center;
     align-content: center;
     text-align: center;
 }
+
 .article-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
+
 .article-grid article {
     padding: 20px;
 }
+
 /* --------------- 4.1 formulier ------------------- */
-.contact form {
+.contact-form {
+    text-align: center;
+
+
+
 
 
 }
+
 .contact-form label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+
+
+
 
 }
 
 .contact-form input {
-    width: 100%;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 
+button[type="submit"] {
+    padding: 15px 60px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--French-rose);
+    color: var(--Wit);
+    position: relative;
+    top: 20px;
+}
+
+.contact-form textarea {
+    width: 50%;
+
+}
 /* ------------------------------- 5. Media queries ---------------------------------------- */
