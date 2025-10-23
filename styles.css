@@ -10,7 +10,7 @@
         4.2
         etc.
     5. Media queries
- /*!///////////////////////!*/
+ ////////////////////////!
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -19,10 +19,10 @@
 :root {
     --Paars: #5722CD;
     --Blauw: #4B49E8;
-    --Lichtpaars: #F2FOFF;
+    --Lichtpaars: #F2F0FF;
     --French-rose: #ED4385;
-    --Zwart: #OCOCOC;
-    --Lichtgrijs: #F3F6F;
+    --Zwart: #0C0C0C;
+    --Lichtgrijs: #F3F6F9;
     --Grijs: #7A7A7A;
     --Wit: #FFFFFF;
 }
@@ -110,23 +110,21 @@ footer {
     color: var(--Wit);
     text-align: center;
     width: 100%;
-    position: fixed;
+    /*position: fixed;*/
     padding: 15px;
 }
 
 /* -------------------------------3 header-------------------------------------- */
-Header {
-    background-color: var(--Paars);
-    color: var(--Wit);
-}
-
-.header {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
     background: linear-gradient(180deg, #5722CD, #4B49E8);
+    background-color: var(--Paars);
+    color: var(--Wit);
 }
+
 
 .outer-container-header {
     display: flex;
@@ -196,7 +194,7 @@ Header {
 
 .inner-container-section {
     display: flex;
-    /*flex-direction: reverse;*/
+    flex-direction: column;
     justify-content: center;
     flex-basis: 1200px;
     /*align-content: center;*/
@@ -209,6 +207,7 @@ img {
 
     width: 100%;
 }
+
 
 .image-wrapper {
     flex-basis: 800px;
@@ -228,10 +227,10 @@ img {
 
 .inner-container-article {
     display: flex;
+    flex-direction: row;
     gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /*align-items: center;*/
+    /*text-align: center;*/
     flex-basis: 1000px;
 }
 
@@ -242,23 +241,20 @@ img {
     align-content: center;
     text-align: center;
 }
-
-.article-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+.service-article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 10px;
+    flex-basis: 150px;
+    min-width: 200px;
 }
 
-.article-grid article {
-    padding: 20px;
-}
 
 /* --------------- 4.1 formulier ------------------- */
 .contact-form {
     text-align: center;
-
-
-
+    padding: 10px
 
 
 }
@@ -266,19 +262,12 @@ img {
 .contact-form label {
     padding-top: 10px;
     padding-bottom: 10px;
-
-
-
-
-
-
 }
 
 .contact-form input {
     width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
-
 }
 
 button[type="submit"] {
@@ -288,7 +277,7 @@ button[type="submit"] {
     border-radius: 25px;
     background-color: var(--French-rose);
     color: var(--Wit);
-    position: relative;
+    /*position: relative;*/
     top: 20px;
 }
 
@@ -296,4 +285,5 @@ button[type="submit"] {
     width: 50%;
 
 }
+
 /* ------------------------------- 5. Media queries ---------------------------------------- */
