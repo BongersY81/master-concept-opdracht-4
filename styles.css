@@ -17,14 +17,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --Paars: #5722CD;
-    --Blauw: #4B49E8;
-    --Lichtpaars: #F2F0FF;
-    --French-rose: #ED4385;
-    --Zwart: #0C0C0C;
-    --Lichtgrijs: #F3F6F9;
-    --Grijs: #7A7A7A;
-    --Wit: #FFFFFF;
+    --paars: #5722CD;
+    --blauw: #4B49E8;
+    --lichtpaars: #F2F0FF;
+    --french-rose: #ED4385;
+    --zwart: #0C0C0C;
+    --lichtgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
+    --wit: #FFFFFF;
 }
 
 * {
@@ -59,13 +59,13 @@ h1 {
     /*left: 50px;*/
     /*right:50px;*/
     /*padding-right: 55px*/
-    color: var(--Wit);
+    color: var(--wit);
 }
 
 h2 {
 
     text-align: center;
-    color: var(--Paars);
+    color: var(--paars);
     margin: 30px;
 }
 
@@ -74,26 +74,26 @@ h3 {
     position: relative;
     top: 10px;
     bottom: 20px;
-    color: var(--Wit);
+    color: var(--wit);
 }
 
 
 p {
     font-size: 12px;
     text-align: center;
-    color: var(--Zwart);
+    color: var(--zwart);
 
 }
 
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 .nav-item {
-    background-color: var(--Paars);
+    background-color: var(--paars);
 }
 
 .navbar a {
     text-decoration: none;
-    color: var(--Wit);
+    color: var(--wit);
 }
 
 .navbar ul {
@@ -103,12 +103,12 @@ p {
     justify-content: flex-end;
     list-style: none;
     padding: 5px;
-    color: var(--Wit);
+    color: var(--wit);
 }
 
 footer {
-    background-color: var(--Zwart);
-    color: var(--Wit);
+    background-color: var(--zwart);
+    color: var(--wit);
     text-align: center;
     width: 100%;
     padding: 20px;
@@ -122,8 +122,8 @@ header {
     align-items: center;
     padding: 40px 20px;
     background: linear-gradient(180deg, #5722CD, #4B49E8);
-    background-color: var(--Paars);
-    color: var(--Wit);
+    background-color: var(--paars);
+    color: var(--wit);
 }
 
 
@@ -152,9 +152,9 @@ header {
     padding: 25px 50px;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
     border-radius: 50px 50px 50px 50px;
-    background-color: var(--French-rose);
+    background-color: var(--french-rose);
     border: none;
-    color: var(--Wit);
+    color: var(--wit);
 }
 
 .header-img {
@@ -180,7 +180,7 @@ header {
     flex-basis: 1000px;
     height: 500px;
     padding-top: 60px;
-    /*border: 2px solid var(--Zwart);*/
+    /*border: 2px solid var(--zwart);*/
 }
 
 /* --------------- 3.2 section ------------------------- */
@@ -190,7 +190,7 @@ header {
     flex-direction: row;
     margin-top: 80px;
     margin-bottom: 80px;
-    /*border: 2px solid var(--Zwart);*/
+    /*border: 2px solid var(--zwart);*/
 }
 
 .inner-container-section {
@@ -202,7 +202,7 @@ header {
     /*align-content: center;*/
     /*justify-content: center;*/
     /*margin:50px;*/
-    /*border: 2px solid var(--Zwart);*/
+    /*border: 2px solid var(--zwart);*/
 }
 
 img {
@@ -217,7 +217,7 @@ img {
     flex-shrink: 1;
 }
 
-/*    border: 2px solid var(--Zwart);*/
+/*    border: 2px solid var(--zwart);*/
 /*}*/
 
 
@@ -264,7 +264,7 @@ img {
     align-items: center;
     text-align: center;
     padding: 10px;
-    background-color: var(--Paars);
+    background-color: var(--paars);
 }
 
 .contact-form label {
@@ -284,8 +284,8 @@ button[type="submit"] {
     text-align: center;
     border: none;
     border-radius: 25px;
-    background-color: var(--French-rose);
-    color: var(--Wit);
+    background-color: var(--french-rose);
+    color: var(--wit);
     /*position: relative;*/
     top: 20px;
 }
