@@ -66,6 +66,7 @@ h2 {
 
     text-align: center;
     color: var(--Paars);
+    margin: 30px;
 }
 
 h3 {
@@ -78,6 +79,7 @@ h3 {
 
 
 p {
+    font-size: 12px;
     text-align: center;
     color: var(--Zwart);
 
@@ -102,7 +104,6 @@ p {
     list-style: none;
     padding: 5px;
     color: var(--Wit);
-    /*border: 2px solid black;*/
 }
 
 footer {
@@ -110,8 +111,8 @@ footer {
     color: var(--Wit);
     text-align: center;
     width: 100%;
-    /*position: fixed;*/
-    padding: 15px;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* -------------------------------3 header-------------------------------------- */
@@ -197,6 +198,7 @@ header {
     flex-direction: column;
     justify-content: center;
     flex-basis: 1200px;
+    flex-wrap: wrap;
     /*align-content: center;*/
     /*justify-content: center;*/
     /*margin:50px;*/
@@ -223,19 +225,23 @@ img {
 .outer-container-article {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
 }
 
 .inner-container-article {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     /*align-items: center;*/
     /*text-align: center;*/
     flex-basis: 1000px;
+    flex-wrap: wrap;
 }
 
 .service-article img {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     width: 40px;
     justify-items: center;
     align-content: center;
@@ -244,22 +250,25 @@ img {
 .service-article {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     padding: 10px;
-    flex-basis: 150px;
-    min-width: 200px;
+    flex-basis: 300px;
+    min-width: 300px;
 }
 
 
 /* --------------- 4.1 formulier ------------------- */
 .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 10px
-
-
+    padding: 10px;
+    background-color: var(--Paars);
 }
 
 .contact-form label {
+    width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -287,3 +296,19 @@ button[type="submit"] {
 }
 
 /* ------------------------------- 5. Media queries ---------------------------------------- */
+
+
+
+/* Minimaal 768px betekend regels die gelden voor tablets */
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Minimaal 992px betekend regels die gelden voor kleine computerschermen */
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 16px;
+    }
+}

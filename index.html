@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../master-concept-opdracht%204/styles.css">
     <title>Title</title>
 </head>
@@ -9,13 +10,9 @@
 
 <nav class="navbar nav-item">
     <ul>
-        <li id="case studies">
-            <!--            linkje toevoegen todo-->
-            Case studies
-
-        </li>
-        <li id="services">Services</li>
-        <li id="contact-formulier">Contact Us</li>
+        <li id="case-studies"><a href="#case-studies">Case Studies</a></li>
+        <li id="services"><a href="#services">Services</a></li>
+        <li id="contact-us"><a href="#contact-us">Contact Us</a></li>
     </ul>
 </nav>
 
@@ -109,7 +106,7 @@
 
                 <article class="service-article">
                     <img src="assets/icon_web-design.svg" alt="icon-web-design"/>
-                    <h2>Web Design</h2>
+                    <h2>Web Design</h2><br>
                     <p>
                         Good web design is how companies stand<br> out from their competitors. High quality<br>
                         web
@@ -124,7 +121,7 @@
 
                 <article class="service-article">
                     <img src="assets/icon_web-development.svg" alt="icon-web-development"/>
-                    <h2>Web Development</h2>
+                    <h2>Web Development</h2><br>
 
                     <p>
                         Modern websites need to be responsive<br> and fully functional at all sizes. We
@@ -140,7 +137,7 @@
                 <article class="service-article">
                     <img src="assets/icon_ux.svg" alt="icon-ux"/>
 
-                    <h2>User Experience</h2>
+                    <h2>User Experience</h2><br>
                     <p>
                         In order to build successful products you<br> have to understand the user. We create<br>
                         user personas,
@@ -154,7 +151,7 @@
                 <article class="service-article">
                     <img src="assets/icon_graphic-design.svg" alt="icon-graphic-design"/>
 
-                    <h2>Logo Design + Branding</h2>
+                    <h2>Logo Design + Branding</h2><br>
 
                     <p>
                         Nike, Apple, Coca-Cola, Starbucks. What do<br> all of these brands have in common?
@@ -170,7 +167,7 @@
                 <article class="service-article">
                     <img src="assets/icon_seo.svg" alt="icon-seo"/>
 
-                    <h2>SEO</h2>
+                    <h2>SEO</h2><br>
 
                     <p>
                         Do you want your site to rank higher in<br> search results? Google is constantly<br>
@@ -186,7 +183,7 @@
                 <article class="service-article">
                     <img src="assets/icon_copywriting.svg" alt="icon-copywriting"/>
 
-                    <h2>Copy Writing</h2>
+                    <h2>Copy Writing</h2><br>
 
                     <p>
                         Brand messaging needs to be clear, direct<br> and easy to understand to be
@@ -204,16 +201,16 @@
             </div>
 
         </section>
-        <h2>Let's work together</h2><br><br>
+        <h2>Let's work together</h2>
 
         <p> Have a question? Need a quote? Let us know!</p><br><br>
         <form class="contact-form">
             <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" placeholder="name"><br>
             <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" placeholder="email"><br>
             <label for="message">Message</label><br>
-            <textarea id="message" name="message" rows="8"></textarea><br>
+            <textarea id="message" name="message" rows="8" placeholder="message"></textarea><br>
             <button type="submit">Send</button>
         </form>
     </section>
