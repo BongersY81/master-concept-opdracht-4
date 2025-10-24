@@ -1,0 +1,312 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Header
+        3.1 introduction
+        3.2 sections
+    4. articles
+        4.1 formulier
+    5. Media queries
+ ////////////////////////!
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --paars: #5722CD;
+    --blauw: #4B49E8;
+    --lichtpaars: #F2F0FF;
+    --french-rose: #ED4385;
+    --zwart: #0C0C0C;
+    --lichtgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
+    --wit: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1, h2, h3 {
+    font-family: "Merriweather", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    /*position : relative;*/
+    /*top: 50px;*/
+    /*bottom: 60px;*/
+    /*left: 50px;*/
+    /*right:50px;*/
+    /*padding-right: 55px*/
+    color: var(--wit);
+}
+
+h2 {
+
+    text-align: center;
+    color: var(--paars);
+    margin: 30px;
+}
+
+h3 {
+    text-align: center;
+    position: relative;
+    top: 10px;
+    bottom: 20px;
+    color: var(--wit);
+}
+
+
+p {
+    font-size: 12px;
+    text-align: center;
+    color: var(--zwart);
+
+}
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+.nav-item {
+    background-color: var(--paars);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--wit);
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 5px;
+    color: var(--wit);
+}
+
+footer {
+    background-color: var(--zwart);
+    color: var(--wit);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* -------------------------------3 header-------------------------------------- */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #5722CD, #4B49E8);
+    background-color: var(--paars);
+    color: var(--wit);
+}
+
+
+.outer-container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*border: 2px solid black;*/
+}
+
+.inner-container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1000px;
+    margin: 0 20px;
+    height: 500px;
+    flex-grow: 0;
+    /*border: 2px solid black;*/
+}
+
+.header-button {
+    text-transform: uppercase;
+    position: relative;
+    top: 90px;
+    padding: 25px 50px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 50px 50px 50px 50px;
+    background-color: var(--french-rose);
+    border: none;
+    color: var(--wit);
+}
+
+.header-img {
+    position: relative;
+    /*top: 100px;*/
+    bottom: 10px;
+}
+
+
+/* ---------------3.1 introduction--------------------------- */
+.outer-container-introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*border: 2px solid var(--Zwart);*/
+
+}
+
+.inner-container-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1000px;
+    height: 500px;
+    padding-top: 60px;
+    /*border: 2px solid var(--zwart);*/
+}
+
+/* --------------- 3.2 section ------------------------- */
+
+.outer-container-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    /*border: 2px solid var(--zwart);*/
+}
+
+.inner-container-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 1200px;
+    flex-wrap: wrap;
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    /*margin:50px;*/
+    /*border: 2px solid var(--zwart);*/
+}
+
+img {
+
+    width: 100%;
+}
+
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/*    border: 2px solid var(--zwart);*/
+/*}*/
+
+
+/* --------------- 4 article ------------------------- */
+.outer-container-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.inner-container-article {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /*align-items: center;*/
+    /*text-align: center;*/
+    flex-basis: 1000px;
+    flex-wrap: wrap;
+}
+
+.service-article img {
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+.service-article {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid red;*/
+    padding: 10px;
+    flex-basis: 300px;
+    min-width: 300px;
+}
+
+
+/* --------------- 4.1 formulier ------------------- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--paars);
+}
+
+.contact-form label {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-form input {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button[type="submit"] {
+    padding: 15px 60px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--french-rose);
+    color: var(--wit);
+    /*position: relative;*/
+    top: 20px;
+}
+
+.contact-form textarea {
+    width: 50%;
+
+}
+
+/* ------------------------------- 5. Media queries ---------------------------------------- */
+
+
+
+/* Minimaal 768px betekend regels die gelden voor tablets */
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Minimaal 992px betekend regels die gelden voor kleine computerschermen */
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 16px;
+    }
+}
